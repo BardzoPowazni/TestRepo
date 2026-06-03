@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bkenpk6cecy3m"]
+
+[ext_resource type="Script" uid="uid://bp3xywqhi8obp" path="res://ludzik.gd" id="1_xhfnw"]
+
+[node name="Player" type="Node2D" unique_id=174400876]
+
+[node name="ludzik" type="CharacterBody2D" parent="." unique_id=1928007348]
+script = ExtResource("1_xhfnw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ludzik" unique_id=2045941183]
