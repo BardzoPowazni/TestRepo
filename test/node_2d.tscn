@@ -2,7 +2,20 @@
 
 [ext_resource type="Texture2D" uid="uid://ddxmxgyyfy8mn" path="res://icon.svg" id="1_wtcfe"]
 
-[node name="Node2D" type="Node2D" unique_id=99378752]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0e48y"]
+size = Vector2(128, 128)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1320769265]
+[node name="Node2D" type="Node2D" unique_id=560744224]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1027757935]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1758580538]
+disable_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=368677650]
+position = Vector2(0, 259)
 texture = ExtResource("1_wtcfe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=848478473]
+position = Vector2(0, 259)
+shape = SubResource("RectangleShape2D_0e48y")
